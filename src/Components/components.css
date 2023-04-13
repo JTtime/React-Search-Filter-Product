@@ -1,0 +1,9 @@
+.sideBar {
+    grid-template-rows: 1em;
+    height: 100vh;
+    background-color: beige;
+  }
+  .mainContent {
+    grid-template-rows: 8em 8em 8em;
+    display: grid;  
+  }
