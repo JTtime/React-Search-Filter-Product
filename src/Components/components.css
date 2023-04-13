@@ -1,8 +1,22 @@
 .sideBar {
     grid-template-rows: 1em;
     height: 250vh;
-    background-color: beige;
+    background-color: beige;    
   }
+  .categoryPane {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;    
+  }
+  .sideTitles {
+    padding: 1rem;
+    font-weight: bolder;
+  }
+  .checks {
+    padding-bottom: 0.6rem;
+  }
+
   .mainContent {
     grid-template-rows: 8em 8em 8em;
     display: grid;  
@@ -42,3 +56,4 @@
     padding-top: 0.5rem;
     object-fit: cover;
   }
+  
