@@ -1,9 +1,13 @@
 import React, {useState, useEffect, useContext} from "react";
-import MyContext from "./MyContext";
+import {MyContext} from "./MyContext";
 
 export default function Products() {
-    const [productsData, setProductsData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
+    const {
+        productsData,
+        setProductsData,
+        filteredData,
+        setFilteredData
+      } = useContext(MyContext);
 
     async function fetchData() {
         const data = await fetch("https://fakestoreapi.com/products").then((res) =>
