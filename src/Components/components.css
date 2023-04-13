@@ -13,8 +13,18 @@
     padding: 1rem;
     font-weight: bolder;
   }
+  .sideBarSubItems {
+    padding-bottom: 0.6rem;
+  }
   .checks {
     padding-bottom: 0.6rem;
+  }
+
+  .priceRangePane {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
   }
 
   .mainContent {
