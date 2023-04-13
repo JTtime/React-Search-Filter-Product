@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import './App.css';
 import { MyContext } from "./Components/MyContext";
 import SideBar from './Components/SideBar';
@@ -6,8 +7,11 @@ import Main from "./Components/Main"
 
 
 function App() {
+  const [productsData, setProductsData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
   return (
-    <MyContext.Provider>
+    <MyContext.Provider value={{ productsData, setProductsData, filteredData, setFilteredData }}>
     <div className="App">
       <SideBar/>
       <Main/>
