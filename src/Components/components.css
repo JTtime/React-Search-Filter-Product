@@ -65,14 +65,18 @@
     width: 95%;
     height: 100%;
     padding-top: 0.5rem;
-    object-fit: cover;    
+    object-fit: cover;
+    position: relative;
+    display: block;    
   }
+
   .image-container {
-position: relative;
+  position: relative;
   width: 80%;
   padding: 2rem;
-  height: 60%;
+  height: 70%;
   }
+
   .heart {
    position: absolute;
   top: 10px;
@@ -81,7 +85,28 @@ position: relative;
   padding: 10px;
   }
 
-
   .clickred {
     color: red;
+  }
+
+  .viewProductBanner {
+    position: absolute;
+  bottom: 1.5rem;
+  width: 90%;
+  height: 20%;
+  background-color: rgba(0, 0, 255, 0.5); /* Set the background color and opacity of the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  }
+
+  .viewProductBanner:hover {
+    opacity: 1;
+    
   }
