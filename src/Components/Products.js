@@ -45,18 +45,21 @@ export default function Products() {
           {filteredData.map((ele) => (
                 <div className="productCard" key={ele.id}>
                     <div class="card">
-                       <div className="image-container">
+                       <div className="image-container" >
                         <img
                           src={ele.image}
                           alt={ele.title}
                           className="thumbnail"
+                          data-title="Hello, world!"
                           />
+                          <div className="viewProductBanner">VIEW PRODUCT</div>
                           <div className="heart" onClick={()=> handleHeartClick(ele.id)}>                      
                       {
                         favorite.includes(ele.id) ? <AiFillHeart className="clickred"/> : <AiOutlineHeart/>
                         
                       }
                           </div>
+
                           
                         </div>
                     <div className="card_caption">
