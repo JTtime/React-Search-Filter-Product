@@ -1,6 +1,9 @@
 .sideBar {
+  position: relative;
+  top:10%;
+  
     grid-template-rows: 1em;
-    height: 250vh;
+    height: 150vh;
     background-color: beige;    
   }
   .categoryPane {
@@ -91,15 +94,15 @@
 
   .viewProductBanner {
     position: absolute;
-  bottom: 1.5rem;
+  bottom: 1rem;
   width: 90%;
-  height: 20%;
+  height: 8%;
   background-color: rgba(0, 0, 255, 0.5); /* Set the background color and opacity of the overlay */
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   opacity: 0;

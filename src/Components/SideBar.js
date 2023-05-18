@@ -70,7 +70,7 @@ export default function SideBar() {
     return (
         <>
         <div className="sideBar">
-            <div>Search Results</div>
+            <div>Filter Products</div>
             <div className="sideBarContent">
                 <div className="categoryPane">
                 <div className="sideTitles">CATEGORY</div>
@@ -115,8 +115,6 @@ export default function SideBar() {
                 <div className="ratingsPane">
                     <div className="sideTitles">RATINGS</div>
                 </div>
-            
-
             </div>
         </div>
         </>
